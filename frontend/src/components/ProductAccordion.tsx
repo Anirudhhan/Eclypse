@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 interface AccordionSection {
   title: string;
@@ -40,8 +40,8 @@ export default function ProductAccordion() {
             onClick={() => toggleSection(index)}
           >
             <span className="sm:text-3xl text-xl font-light">{section.title}</span>
-            <ChevronDown
-              className={`transform transition-transform duration-300 size-8 sm:size-12 cursor-pointer ${
+            <ArrowDown
+              className={`transform transition-transform font-light duration-300 size-8 sm:size-12 cursor-pointer ${
                 openSection === index ? "rotate-180" : ""
               }`}
             />

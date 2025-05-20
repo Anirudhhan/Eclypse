@@ -2,6 +2,7 @@ import { MoveUpRight } from "lucide-react";
 import MidGridSection from "../components/MidGridSection";
 import ProductAccordion from "../components/ProductAccordion";
 import TestimonialSlider from "../components/TestimonialSlider";
+import Footer from "../components/Footer";
 
 function Home() {
 
@@ -53,6 +54,7 @@ function Home() {
           <MidGridSection />
           <ProductAccordion/>
           <TestimonialSlider/>
+          <Footer/>
 
         </div>
       </div>
