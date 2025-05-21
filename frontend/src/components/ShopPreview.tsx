@@ -12,7 +12,7 @@ const ShopPreview = () => {
     return <div></div>;
   }
 
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+  const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5001" : '/';
 
   return (
     <div className="">
