@@ -34,14 +34,14 @@ export default function ProductAccordion() {
   return (
     <div className="w-full  mx-auto mt-30">
       {accordionData.map((section, index) => (
-        <div key={index} className="border-b border-gray-700 sm:pb-4 sm:pt-12 pt-8">
+        <div key={index} className="border-b border-gray-700 md:pb-4 md:pt-12 pt-8">
           <button
             className="w-full py-6 flex justify-between items-center text-left text-xl text-white focus:outline-none"
             onClick={() => toggleSection(index)}
           >
-            <span className="sm:text-3xl text-xl font-light">{section.title}</span>
+            <span className="md:text-3xl text-xl font-light">{section.title}</span>
             <ArrowDown
-              className={`transform transition-transform font-light duration-300 size-8 sm:size-12 cursor-pointer ${
+              className={`transform transition-transform font-light duration-300 size-8 md:size-12 cursor-pointer ${
                 openSection === index ? "rotate-180" : ""
               }`}
             />
