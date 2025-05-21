@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useProductDetails } from "../store/useProductDetails";
+import { Link } from "react-router-dom";
 
 const ShopPreview = () => {
   const { productDetails, getProductDetails } = useProductDetails();
@@ -90,9 +91,11 @@ const ShopPreview = () => {
             </p>
           </div>
           <div className="md:mt-20 mt-8 mb-10 md:mb-0 flex flex-col md:flex-row gap-6">
-            <button className="text-black text-xl font-medium border-2 border-gray-400 py-4 px-8 rounded-lg">
-              Add to Cart
-            </button>
+            <Link to="/cart">
+              <button className="cursor-pointer text-black text-xl font-medium border-2 border-gray-400 py-4 px-8 rounded-lg">
+                Add to Cart
+              </button>
+            </Link>
             <button className="bg-black text-xl font-medium hover:bg-red-500 py-4 md:px-48 rounded-lg duration-300 cursor-pointer">
               Buy
             </button>

@@ -11,12 +11,12 @@ function Home() {
       <div className="bg-[#070707] md:pt-20 md:mx-40 min-h-screen justify-center">
         <div className="flex justify-between items-end md:mx-10 mx-5 md:mt-20 mt-5 h-40 relative">
           <div>
-            <h1 className="md:text-8xl text-3xl">
+            <h1 className="md:text-8xl text-3xl cursor-default">
               Eclypse<span className="md:text-4xl text-sm align-super">®</span>
             </h1>
           </div>
 
-          <div className="text-sm pb-2 pr-2">
+          <div className="text-sm pb-2 pr-2 cursor-default">
             <span>
               <span className="text-base-content/60">&copy;</span> 2025
             </span>
@@ -34,11 +34,11 @@ function Home() {
                 playsInline
                 className="md:rounded-md rounded-sm w-full h-full object-cover brightness-80"
               />
-              <p className="md:text-4xl font-light text-sm text-white absolute bottom-1 right-2  px-2 py-1 rounded">
+              <p className="cursor-defaults md:text-4xl font-light text-sm text-white absolute bottom-1 right-2  px-2 py-1 rounded">
                 A silhouette worth remembering
               </p>
             </div>
-            <h1 className="md:mt-50 mt-20 md:text-5xl w-[80%] md:w-[70%] font-light md:mx-10 mx-5">
+            <h1 className="cursor-default md:mt-50 mt-20 md:text-5xl w-[80%] md:w-[70%] font-light md:mx-10 mx-5">
               Rooted in a philosophy of quiet luxury, our garments are designed
               to speak softly in cut, in movement, in presence.
             </h1>

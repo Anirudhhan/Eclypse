@@ -20,7 +20,7 @@ function MidGridSection() {
               alt="Red fabric detail"
               className="w-full h-full object-cover group-hover:opacity-75 group-hover:brightness-55  duration-900"
             />
-            <p className="opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
+            <p className="cursor-default opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
               Premium wool blend in signature vermilion
             </p>
           </div>
@@ -42,7 +42,7 @@ function MidGridSection() {
             alt="Red fabric close-up"
             className="w-full h-full object-cover contrast-80 group-hover:opacity-75 group-hover:brightness-55  duration-900"
           />
-          <p className="opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
+          <p className="cursor-default  opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
             Discreet side pockets with clean finish
           </p>
         </div>
@@ -53,7 +53,7 @@ function MidGridSection() {
             alt="Hand with scissors"
             className="w-full h-full object-cover contrast-80 group-hover:opacity-75 group-hover:brightness-55  duration-900"
           />
-          <p className="opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
+          <p className="cursor-default  opacity-0 group-hover:opacity-100  transition-all duration-900 md:text-4xl text-sm text-white absolute bottom-6 left-3 px-2 py-1 rounded">
             Hand-cut and assembled in small batches
           </p>
         </div>
@@ -64,7 +64,7 @@ function MidGridSection() {
             alt="Brand logo"
             className="w-full h-full object-cover group-hover:opacity-55 group-hover:bg-black group-hover:brightness-0 duration-900"
           />
-          <p className="opacity-0 group-hover:opacity-100 transition-all duration-900 text-7xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 py-1 rounded">
+          <p className="cursor-default  opacity-0 group-hover:opacity-100 transition-all duration-900 text-7xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-2 py-1 rounded">
             Eclypse<span className="md:text-4xl text-sm align-super">®</span>
           </p>
         </div>
