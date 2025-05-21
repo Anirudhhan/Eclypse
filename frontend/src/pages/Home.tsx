@@ -38,12 +38,12 @@ function Home() {
                 A silhouette worth remembering
               </p>
             </div>
-            <h1 className="cursor-default md:mt-50 mt-20 md:text-5xl w-[80%] md:w-[70%] font-light md:mx-10 mx-5">
+            <h1 className="cursor-default md:mt-50 mt-20 md:text-5xl w-[80%] md:w-[70%] font-light">
               Rooted in a philosophy of quiet luxury, our garments are designed
               to speak softly in cut, in movement, in presence.
             </h1>
 
-            <div className="md:mt-20 mt-10 md:mx-10 mx-5">
+            <div className="md:mt-20 mt-10 ">
               <div className="inline-flex items-center border-b group cursor-pointer hover:bg-white py-2">
                 <h1 className="font-light md:text-2xl text-md hover:ml-3 hover:text-black duration-400 mr-2">
                   Learn more about Eclypse
@@ -55,9 +55,11 @@ function Home() {
           </div>
 
           <ShopPreview />
-          <div className="md:mx-10 mx-5">
+          <div className="md:mx-10 mx-1">
             <ProductAccordion />
             <TestimonialSlider />
+          </div>
+          <div className="md:mx-10 mx-8">
             <Footer />
           </div>
         </div>
