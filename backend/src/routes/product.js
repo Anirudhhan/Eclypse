@@ -1,9 +1,10 @@
-const express = require('express');
+import express from 'express';
+import product from '../data/product.js';
+
 const router = express.Router();
-const product = require('../data/product');
 
 router.get('/', (req, res) => {
   res.json(product);
 });
 
-module.exports = router;
+export default router;

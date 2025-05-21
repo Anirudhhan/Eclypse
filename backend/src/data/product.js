@@ -11,4 +11,4 @@ const product = {
   ]
 };
 
-module.exports = product;
+export default product;
