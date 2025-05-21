@@ -9,8 +9,10 @@ const ShopPreview = () => {
   }, []);
 
   if (!productDetails) {
-    return <div>Loading product...</div>;
+    return <div></div>;
   }
+
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
 
   return (
     <div className="">
@@ -23,7 +25,7 @@ const ShopPreview = () => {
       <div className="bg-white w-full flex flex-col sm:flex-row">
         <div className="sm:w-1/2 w-full">
           <video
-            src={`http://localhost:5001${productDetails.video}`}
+            src={`${API_URL}${productDetails.video}`}
             autoPlay
             muted
             loop
@@ -38,23 +40,26 @@ const ShopPreview = () => {
           </p>
           <div className="flex flex-3 relative gap-4 justify-evenly py-4 sm:py-12 border-b border-gray-300">
             <img
-              src={`http://localhost:5001${productDetails.images[0]}`}
+              src={`${API_URL}${productDetails.images[0]}`}
               className="sm:h-50 sm:w-50 h-30 w-30 object-cover"
               alt=""
             />
             <img
-              src={`http://localhost:5001${productDetails.images[1]}`}
+              src={`${API_URL}${productDetails.images[1]}`}
               className="sm:h-50 sm:w-50 h-30 w-30 object-cover"
               alt=""
             />
             <img
-              src={`http://localhost:5001${productDetails.images[2]}`}
+              src={`${API_URL}${productDetails.images[2]}`}
               className="sm:h-50 sm:w-50 h-30 w-30  object-cover"
               alt=""
             />
           </div>
           <div className="sm:py-12 py-8 flex relative items-center gap-2">
-            <h1 className="text-black sm:text-4xl text-3xl font-medium"> ₹ 7,999</h1>
+            <h1 className="text-black sm:text-4xl text-3xl font-medium">
+              {" "}
+              ₹ 7,999
+            </h1>
             <p className="text-gray-400 font-light sm:text-sm text-xs">
               MRP incl. of all taxes
             </p>
@@ -92,14 +97,6 @@ const ShopPreview = () => {
           </div>
         </div>
       </div>
-
-      {/* <img src={`http://localhost:5001${productDetails.images[0]}`} alt="" />
-
-        <video
-          src={`http://localhost:5001${productDetails.video}`}
-          controls
-          className="w-full max-w-xl"
-        /> */}
     </div>
   );
 };

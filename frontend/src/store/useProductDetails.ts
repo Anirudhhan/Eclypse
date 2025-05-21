@@ -8,7 +8,7 @@ type Product = {
   price: number;
   images: string[];
   video: string;
-  des: string; // assuming this is part of your product object too
+  des: string; 
 };
 
 interface ProductDetailsStore {
