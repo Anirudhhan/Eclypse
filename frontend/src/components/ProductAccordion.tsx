@@ -32,7 +32,7 @@ export default function ProductAccordion() {
   ];
 
   return (
-    <div className="w-full  mx-auto mt-5">
+    <div className="w-full  mx-auto mt-30">
       {accordionData.map((section, index) => (
         <div key={index} className="border-b border-gray-700 sm:pb-4 sm:pt-12 pt-8">
           <button

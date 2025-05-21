@@ -3,9 +3,9 @@ import MidGridSection from "../components/MidGridSection";
 import ProductAccordion from "../components/ProductAccordion";
 import TestimonialSlider from "../components/TestimonialSlider";
 import Footer from "../components/Footer";
+import ShopPreview from "../components/ShopPreview";
 
 function Home() {
-
   return (
     <div className="text-white w-full justify-center">
       <div className="bg-[#070707] sm:pt-20 sm:mx-40 min-h-screen justify-center">
@@ -23,39 +23,43 @@ function Home() {
           </div>
         </div>
 
-        <div className="sm:mx-10 mx-5 pb-20 pt-5">
-          <div className="relative sm:h-[555px] h-[250px] w-full">
-            <video
-              src="/videos/intro.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="sm:rounded-md rounded-sm w-full h-full object-cover brightness-80"
-            />
-            <p className="sm:text-4xl font-light text-sm text-white absolute bottom-1 right-2  px-2 py-1 rounded">
-              A silhouette worth remembering
-            </p>
-          </div>
-          <h1 className="sm:mt-50 mt-20 sm:text-5xl w-[80%] sm:w-[70%] font-light">
-            Rooted in a philosophy of quiet luxury, our garments are designed to
-            speak softly in cut, in movement, in presence.
-          </h1>
-
-          <div className="sm:mt-20 mt-10">
-            <div className="inline-flex items-center border-b group cursor-pointer hover:bg-white py-2">
-              <h1 className="font-light sm:text-2xl text-md hover:ml-3 hover:text-black duration-400 mr-2">
-                Learn more about Eclypse
-              </h1>
-              <MoveUpRight className="transition-opacity duration-450 group-hover:hidden" />
+        <div className="pb-20 pt-5">
+          <div className="sm:mx-10 mx-5">
+            <div className="relative sm:h-[555px] h-[250px] w-full">
+              <video
+                src="/videos/intro.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="sm:rounded-md rounded-sm w-full h-full object-cover brightness-80"
+              />
+              <p className="sm:text-4xl font-light text-sm text-white absolute bottom-1 right-2  px-2 py-1 rounded">
+                A silhouette worth remembering
+              </p>
             </div>
+            <h1 className="sm:mt-50 mt-20 sm:text-5xl w-[80%] sm:w-[70%] font-light sm:mx-10 mx-5">
+              Rooted in a philosophy of quiet luxury, our garments are designed
+              to speak softly in cut, in movement, in presence.
+            </h1>
+
+            <div className="sm:mt-20 mt-10 sm:mx-10 mx-5">
+              <div className="inline-flex items-center border-b group cursor-pointer hover:bg-white py-2">
+                <h1 className="font-light sm:text-2xl text-md hover:ml-3 hover:text-black duration-400 mr-2">
+                  Learn more about Eclypse
+                </h1>
+                <MoveUpRight className="transition-opacity duration-450 group-hover:hidden" />
+              </div>
+            </div>
+            <MidGridSection />
           </div>
 
-          <MidGridSection />
-          <ProductAccordion/>
-          <TestimonialSlider/>
-          <Footer/>
-
+          <ShopPreview />
+          <div className="sm:mx-10 mx-5">
+            <ProductAccordion />
+            <TestimonialSlider />
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
