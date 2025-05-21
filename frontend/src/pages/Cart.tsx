@@ -62,10 +62,10 @@ function Cart() {
                     />
                   </div>
 
-                  <div className="grid grid-cols-3 gap-4 mb-6">
+                  <div className="grid grid-cols-3 gap-4 mb-6 mt-5">
                     <div>
-                      <label className="block sm:text-lg text-gray-900 mb-1">
-                        Apt Number
+                      <label className="block sm:text-lg text-sm text-gray-900 mb-1">
+                        Apt <span>Number</span>
                       </label>
                       <input
                         type="text"
@@ -74,7 +74,7 @@ function Cart() {
                       />
                     </div>
                     <div>
-                      <label className="block sm:text-lg text-gray-900 mb-1">
+                      <label className="block sm:text-lg text-sm text-gray-900 mb-1">
                         State
                       </label>
                       <input
@@ -84,7 +84,7 @@ function Cart() {
                       />
                     </div>
                     <div>
-                      <label className="block sm:text-lg text-gray-900 mb-1">
+                      <label className="block sm:text-lg text-sm text-gray-900 mb-1">
                         Zip
                       </label>
                       <input
