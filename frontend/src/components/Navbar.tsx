@@ -12,7 +12,7 @@ function Navbar() {
                 <Link to="/"  className="cursor-pointer">About Us</Link>
                 <Link to="/" className="cursor-pointer">Waitlist</Link>
                 <Link to='/cart' className="cursor-pointer">Cart</Link>
-                <Link to='/carts'>
+                <Link to='/cart'>
                 <button className="bg-white text-black rounded-lg sm:px-9 sm:pt-3 sm:pb-2 px-4 py-1.5 font-medium cursor-pointer hover:bg-red-600 hover:text-white duration-300">Buy</button>
                 </Link>
             </div>

@@ -27,8 +27,9 @@ if (process.env.NODE_ENV === "production") {
   });
 };
 
-app.use('/images', express.static('public/images'));
-app.use('/videos', express.static('public/videos'));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/videos', express.static(path.join(__dirname, 'public/videos')));
+
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
