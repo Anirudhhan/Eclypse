@@ -12,8 +12,6 @@ const ShopPreview = () => {
     return <div></div>;
   }
 
-  const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5001" : '/';
-
   return (
     <div className="">
       <div className="sm:py-40 py-18 sm:mx-10 mx-5">
@@ -25,7 +23,8 @@ const ShopPreview = () => {
       <div className="bg-white w-full flex flex-col sm:flex-row">
         <div className="sm:w-1/2 w-full">
           <video
-            src={`${API_URL}${productDetails.video}`}
+            // src="/videos/main.mp4"
+            src={`${productDetails.video}`}
             autoPlay
             muted
             loop
@@ -40,17 +39,20 @@ const ShopPreview = () => {
           </p>
           <div className="flex flex-3 relative gap-4 justify-evenly py-4 sm:py-12 border-b border-gray-300">
             <img
-              src={`${API_URL}${productDetails.images[0]}`}
+              // src="images/img1.jpg"
+              src={`${productDetails.images[0]}`}
               className="sm:h-50 sm:w-50 h-25 w-25 object-cover"
               alt=""
             />
             <img
-              src={`${API_URL}${productDetails.images[1]}`}
+              // src="images/img2.jpg"
+              src={`${productDetails.images[1]}`}
               className="sm:h-50 sm:w-50 h-25 w-25 object-cover"
               alt=""
             />
             <img
-              src={`${API_URL}${productDetails.images[2]}`}
+              // src="images/img3.jpg"
+              src={`${productDetails.images[2]}`}
               className="sm:h-50 sm:w-50 h-25 w-25  object-cover"
               alt=""
             />
