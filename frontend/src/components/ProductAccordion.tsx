@@ -52,7 +52,7 @@ export default function ProductAccordion() {
               openSection === index ? "max-h-96 pb-6" : "max-h-0"
             }`}
           >
-            <p className="text-gray-300 text-lg">{section.content}</p>
+            <p className="text-gray-300 sm:text-lg text-xs">{section.content}</p>
           </div>
         </div>
       ))}
