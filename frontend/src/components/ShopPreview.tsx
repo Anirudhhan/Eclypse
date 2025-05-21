@@ -41,17 +41,17 @@ const ShopPreview = () => {
           <div className="flex flex-3 relative gap-4 justify-evenly py-4 sm:py-12 border-b border-gray-300">
             <img
               src={`${API_URL}${productDetails.images[0]}`}
-              className="sm:h-50 sm:w-50 h-30 w-30 object-cover"
+              className="sm:h-50 sm:w-50 h-25 w-25 object-cover"
               alt=""
             />
             <img
               src={`${API_URL}${productDetails.images[1]}`}
-              className="sm:h-50 sm:w-50 h-30 w-30 object-cover"
+              className="sm:h-50 sm:w-50 h-25 w-25 object-cover"
               alt=""
             />
             <img
               src={`${API_URL}${productDetails.images[2]}`}
-              className="sm:h-50 sm:w-50 h-30 w-30  object-cover"
+              className="sm:h-50 sm:w-50 h-25 w-25  object-cover"
               alt=""
             />
           </div>
